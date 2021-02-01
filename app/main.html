@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jastevaro</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles/main.css" type="text/css" />
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/screen.js"></script>
+</head>
+
+<body>
+    <div class="form">
+        <div class="menubar">
+            <ul class="menu">
+                <li class="submenu">
+                    <a class="submenu-parent">
+                        <div class="menu-item-header">Game</div>
+                        <div class="submenu-container">
+                            <ul class="submenu-children first">
+                                <li class="menu-item" onclick="JastevaroMenu.onGameNew();">
+                                    <div class="menu-item-text">New ...</div>
+                                </li>
+                                <li class="menu-item" onclick="JastevaroMenu.onGameSave();">
+                                    <div class="menu-item-text">Save ...</div>
+                                </li>
+                                <li class="menu-separator"></li>
+                                <li class="menu-item" onclick="JastevaroMenu.onGameQuit();">
+                                    <div class="menu-item-text">Quit</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="submenu">
+                    <a class="submenu-parent">
+                        <div class="menu-item-header">Settings</div>
+                        <div class="submenu-container">
+                            <ul class="submenu-children">
+                                <li class="menu-item" onclick="JastevaroMenu.onSettingsGraphic();">
+                                    <div class="menu-item-text">Graphic ...</div>
+                                </li>
+                                <li class="menu-item" onclick="JastevaroMenu.onSettingsSound();">
+                                    <div class="menu-item-text">Sound ...</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="submenu">
+                    <a class="submenu-parent">
+                        <div class="menu-item-header">Help</div>
+                        <div class="submenu-container">
+                            <ul class="submenu-children">
+                                <li class="menu-item" onclick="JastevaroMenu.onHelpIndex();">
+                                    <div class="menu-item-text">Index ...</div>
+                                </li>
+                                <li class="menu-separator"></li>
+                                <li class="menu-item" onclick="JastevaroMenu.onHelpAbout();">
+                                    <div class="menu-item-text">About ...</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="workspace" class="workspace">
+            <div id="surface">
+                <canvas id="playground"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
