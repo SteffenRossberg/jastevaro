@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+
+    jastevaro.web:
+        image: nginx
+        container_name: jastevaro.web
+        volumes:
+            - "./app/:/usr/share/nginx/html:ro"
+        ports:
+            - 8080:80
