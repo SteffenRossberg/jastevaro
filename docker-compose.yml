@@ -7,5 +7,6 @@ services:
         container_name: jastevaro.web
         volumes:
             - "./app/:/usr/share/nginx/html:ro"
+            - "./configs/jastevaro.conf:/etc/nginx/conf.d/jastevaro.conf:ro"
         ports:
             - 8080:80
